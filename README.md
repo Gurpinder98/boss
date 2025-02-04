@@ -1,5 +1,6 @@
 # BOSS jr. Documentation
-
+Author: Gurpinder 
+Last update: 18-12-2024
 ## Overview
 **B**rassica **O**rthologue **S**earch **S**cript
 BOSS jr. is a Python script designed for gene mapping between different genomic assemblies, specifically for limited sets of genes (a few hundred at most). It was originally created to find gene mappings between *Brassica napus* assemblies and orthologues between *Arabidopsis* and Brassicas. The script performs reciprocal BLAST searches to establish gene correspondences.
