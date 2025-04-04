@@ -4,7 +4,7 @@ Author: Gurpinder
 Last update: 18-12-2024
 ## Overview
 **B**rassica **O**rthologue **S**earch **S**cript
-BOSS jr. is a Python script designed for gene mapping between different genomic assemblies, specifically for limited sets of genes (a few hundred at most). It was originally created to find gene mappings between *Brassica napus* assemblies and orthologues between *Arabidopsis* and Brassicas. The script performs reciprocal BLAST searches to establish gene correspondences.
+BOSS jr. is a Python script designed for gene mapping between different genomic assemblies, specifically for limited sets of genes (a few hundred at most). It was originally created to find gene mappings between *Brassica napus* assemblies and orthologues between *Arabidopsis* and Brassicas. The script performs reciprocal BLAST searches to establish gene correspondences. The script runs blastn, so is suitable for search using CDS sequences.
 
 ## Dependencies
 It has been tested with
@@ -20,9 +20,9 @@ Boss_jr.py [-h] [--evalue_threshold EVALUE_THRESHOLD] input_file query_database 
 
 **input_file**: Path to the file containing the list of query gene IDs (one per line).
 
-**query_database**: Path to the query database in FASTA format.
+**query_database**: Path to the query database (Nucleotide database created using `makeblastdb').
 
-**target_database**: Path to the target database in FASTA format.
+**target_database**: Path to the target database (Nucleotide database created using `makeblastdb').
 
 **flag**: Specifies the operation mode:
 
